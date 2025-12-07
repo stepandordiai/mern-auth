@@ -32,10 +32,9 @@ function App() {
 				} catch (error) {
 					setError(error);
 					localStorage.removeItem("token");
-				} finally {
-					setIsLoading(false);
 				}
 			}
+			setIsLoading(false);
 		};
 
 		fetchUser();
