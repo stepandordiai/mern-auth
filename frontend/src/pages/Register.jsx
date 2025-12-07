@@ -22,7 +22,7 @@ const Register = ({ setUser }) => {
 		e.preventDefault();
 		try {
 			const res = await axios.post(
-				"https://mern-login-logout-565e.onrender.com",
+				"https://mern-login-logout-565e.onrender.com/api/users/register",
 				formData
 			);
 			localStorage.setItem("token", res.data.token);
