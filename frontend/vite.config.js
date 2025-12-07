@@ -9,9 +9,7 @@ export default defineConfig({
 	server: {
 		proxy: {
 			"/api": {
-				target:
-					"https://mern-login-logout-565e.onrender.com" ||
-					"http://localhost:3000",
+				target: "http://localhost:3000",
 			},
 		},
 	},
