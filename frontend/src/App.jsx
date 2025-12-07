@@ -25,9 +25,12 @@ function App() {
 			const token = localStorage.getItem("token");
 			if (token) {
 				try {
-					const response = await axios.get("/api/users/me", {
-						headers: { Authorization: `Bearer ${token}` },
-					});
+					const response = await axios.get(
+						"https://mern-login-logout-565e.onrender.com/api/users/me",
+						{
+							headers: { Authorization: `Bearer ${token}` },
+						}
+					);
 					setUser(response.data);
 				} catch (error) {
 					setError(error);

@@ -20,7 +20,10 @@ const Login = ({ setUser }) => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const res = await axios.post("/api/users/login", formData);
+			const res = await axios.post(
+				"https://mern-login-logout-565e.onrender.com/api/users/login",
+				formData
+			);
 			localStorage.setItem("token", res.data.token);
 			setUser(res.data);
 			console.log(res.data);
