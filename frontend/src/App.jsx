@@ -9,7 +9,7 @@ import axios from "axios";
 import "./scss/App.scss";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Register from "./pages/Register";
+import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
 import NotFound from "./components/NotFound";
 

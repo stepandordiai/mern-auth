@@ -1,0 +1,23 @@
+.register {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	padding: 20px;
+	width: min(calc(100% - 20px), 500px);
+	border-radius: 30px;
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.register__btn {
+	background: black;
+	color: #fff;
+	padding: 10px;
+	border-radius: 20px;
+	margin-top: 40px;
+}
